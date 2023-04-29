@@ -2,26 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+
+
+
+
+
+.img{
+    transform: scale(1) ;
+    transition: 1s;
+}
+.img:hover,
+.img:focus{
+    transform: scale(1.5) ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.chrischain{
+    display: grid;
+    grid-template-columns:repeat(3, .7fr) ;
+    grid-template-areas: 'a b c';
+    grid-template-rows: repeat(1, auto);
+    column-gap: 20px;
+    justify-items: center;
+    /* background-color: black; */
+}
+.red{
+    width: 300px;
+    height: 354px;
+    border-radius: 24px;
+}
+.firstpara{
+    color: #777777;
+    width: 70%;
+}
+.img3{
+    position: relative;
+    border-radius: 24px;
+    width: 494px;
+    height: 506px;
+}
+.img5{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    z-index: 1;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+}
+.azile{
+justify-content: space-evenly;
+align-items: center;
+}
+.thirddiv{
+    justify-content: space-between;
+}
+.img8{
+    border-radius: 24px;
+    width: 444px;
+    height: 523px;
+}
+.img7{
+    border-radius: 12px;
+    width: 291px;
+    height: 388px;
+    top: 70%;
+    right: 4%;
+    z-index: 1;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12)
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.img11{
+    height: 58px;
+    width: 58px;
+    
 }
+.center{
+    text-align: center;
+}
+.active{
+display: flex;
+padding-top: 18px;
+}
+
+
