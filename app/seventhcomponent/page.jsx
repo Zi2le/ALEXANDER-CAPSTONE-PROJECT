@@ -2,8 +2,8 @@ import React from 'react'
 
 const eda = () => {
   return (
-   <section className='h-screen mt-20 '>
-    <div className='flex flex-col justify-center items-center w-[69%] h-[50%]  bg-gradient-to-r from-[#1C3D5B] hover:from-[#2F3349]  m-auto'>
+   <section className='h-screen flex items-center justify-center '>
+    <div className='flex flex-col justify-center items-center w-[69%] h-[55%]  bg-gradient-to-r from-[#1C3D5B] hover:from-[#2F3349]  m-[auto]'>
         <div className='flex flex-col justify-center items-center '>
             <p className='text-center text-3xl text-[white] '>An enterprise template to ramp </p>
             <span className=' text-3xl mt-2 text-[white] '>up your company website</span>

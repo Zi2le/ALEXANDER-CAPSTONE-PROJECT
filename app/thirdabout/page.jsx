@@ -34,11 +34,11 @@ const teams = teamDescription.map(team=> (
     </Fragment>
 )) 
   return (
-  <section>
+  <section className='mb-40'>
     <div className='flex flex-col w-[59%] h-[50%] m-auto '>
         <p className='text-[grey] mb-5'>Our team</p>
         <h1 className='text-3xl mb-5'>The leadership team</h1>
-        <p className='text-[grey] w-[79%]'>Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. </p>
+        <p className='text-[#777777] w-[79%]'>Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. </p>
     </div>
     <section className='flex justify-evenly'>
         {teams}
