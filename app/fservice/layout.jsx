@@ -8,16 +8,18 @@ export const metadata = {
   }
   function RootLayout ({ children }) {
     return (
-      <html lang="en">
-        <body> 
+   //<html lang="en">
+   //    <body> 
+   <>
         <Navbar/> 
-        <div>
+        
           {children}
           <Seventhcomponent/>
           <Footer/>
-          </div>
-          </body>
-      </html>
+          
+     </>
+     //    </body>
+   // </html>
     )
   }
   export default RootLayout

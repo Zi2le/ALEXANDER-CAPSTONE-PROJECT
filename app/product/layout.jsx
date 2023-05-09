@@ -1,4 +1,3 @@
-
 import Navbar from '../navbar/page'
 import Seventhcomponent from '../seventhcomponent/page'
 import Footer from '../footer/page'
@@ -9,17 +8,17 @@ export const metadata = {
   
   function RootLayout({ children }) {
     return (
-      <html lang="en">
-        <body> 
+    //  <html lang="en">
+     //   <body> 
+      <>
             <Navbar/>
           {children}
-          <div>
           <Seventhcomponent/>
           
           <Footer/>
-          </div>
-          </body>
-      </html>
+        </>
+     // </body>
+    // </html> 
     )
   }
   export default RootLayout
