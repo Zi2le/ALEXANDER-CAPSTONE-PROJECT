@@ -42,7 +42,7 @@ const services = () => {
    <Image className='rounded-lg red' src={service.image} alt={service.name} width={300} height={354} placeholder='blur' />
     <h2 className='my-4 text-xl'> {service.heading}</h2>
     <p className='firstpara'>{service.description}</p>
-     <div className='flex mt-2 '><Link className='text-black' href='/explore'><span className='border-b-2 border-b-black flex items-center p-2' >{service.link}<FaArrowRight className='mx-5'/></span></Link></div>
+     <div className='flex mt-2 '><span className='border-b-2 border-b-black flex items-center p-2' >{service.link}<FaArrowRight className='mx-5'/></span></div>
     </section>
     </Fragment>
     ))
