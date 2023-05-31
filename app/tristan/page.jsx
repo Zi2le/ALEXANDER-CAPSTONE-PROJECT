@@ -1,69 +1,73 @@
 import React from 'react'
 import Link from 'next/link'
-import {FaUserAlt} from "react-icons/fa"
-import {RiLockPasswordFill} from "react-icons/ri"
+import {RiMailLockLine } from "react-icons/ri"
+import {MdLockPerson} from "react-icons/md"
+import {RiLockPasswordFill, RiTwitterFill} from "react-icons/ri"
 import Image from 'next/image'
-import img38 from '../tristan/login1.jpg'
-import {Cookie} from 'next/font/google'
-const dancing_script = Cookie({
-  subsets: ['latin'],
-  variable:'--xander',
-  weight: '400',
- })
-const ris ={
-  backgroundImage:"url('/ris/login2.jpg')",
+import xan12 from '../tristan/_.jpg'
+// import {Cookie} from 'next/font/google'
+// const dancing_script = Cookie({
+//   subsets: ['latin'],
+//   variable:'--xander',
+//   weight: '400',
+//  })
+const master ={
+  background: "linear-gradient(225deg, hsla(285, 47%, 13%, 1) 12%, hsla(332, 50%, 21%, 1) 34%, hsla(235, 25%, 44%, 1) 48%, hsla(243, 23%, 40%, 1) 48%, hsla(337, 45%, 18%, 1) 82%, hsla(332, 40%, 16%, 1) 94%, hsla(277, 39%, 12%, 1) 95%)",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  backgroundColor: " rgba(128, 128, 128, 0.258)",
-  backgroundBlendMode: "overlay",
-  backgroundAttachment: "fixed",
-  zIndex: 1
+  zIndex: 1,
 }
-const master= {
-  backgroundColor: "white",
+
+const ris={
   zIndex: 5,
-  height:"79%",
-  width: "35%",
-  margin: "auto",
+  height:"74%",
+  width: "30%",
   top: "50%",
   left: "50%",
   transform:"translate(-50%, -50%)"
-} 
-const relative = {
-  zIndex: 10
 }
-const absolute = {
-  zIndex: 1
+const azile = {
+  border: "none",
+  outline: "none",
+  backgroundColor: "transparent",
+  borderBottom: "2px solid black",
+  width: "250px"
 }
-const tris = () => {
-  return (
-    <section className='h-screen m-0 grayscale relative' style={ris}>
-   <div className='absolute' style={master}>
-    <div className='flex flex-col justify-center items-center'>
-      <p className={ `${dancing_script.variable} font-sans text-zinc-900  text-center mt-5 text-xl`}>AZILE LOGIN PAGE</p>
-     <div className='flex justify-center items-center mt-20'> 
-       <Image src={img38} height={45} width={45} alt='xander' className=' rounded-full'/>
-       <p className={`${dancing_script.variable} font-sans ml-4`}>Alexander</p>
+const Tris = () => {
+  return(
+  <section className='h-screen relative grayscale' style={master}>
+    <div className='absolute   outline-none h-[auto]  shadow-2xl rounded-3xl backdrop-filter backdrop-blur backdrop-brightness-150 flex flex-col items-center' style={ris}>
+      <div className='text-[white]  flex flex-col justify-center items-center'>
+        <div className='mt-16'>
+     <Image className='rounded-full' src={xan12} width={120} height={120} alt='xander'/>
      </div>
-     <div className='flex flex-col justify-center items-center relative mt-20'> 
-     <div className='relative'>
-     <FaUserAlt className=' absolute left-2 top-[62%] transform -translate-y-1/2 ' /> 
-      <input type="text" name="user" id="user" placeholder='Username' className=' mt-5 pl-10 p-4 outline-none shadow-2xl rounded-3xl relative bg-transparent placeholder:text-slate-800 placeholder:shadow-2xl placeholder: shadow-black '/>
+     <div className='flex flex-col space-y-9 mt-[72px]'>
+     <div className='flex justify-center items-center relative'>
+      <RiMailLockLine className='text-black relative left-5'/>
+      <input type="email" name="email" id="email" className='pl-8' placeholder='Email ID' style={azile}/>
       </div>
-     <div className='relative mr-3'>
-      <RiLockPasswordFill className='absolute left-8 top-[62%] transform -translate-y-1/2 h-5 w-5'/> 
-      <input type="password" name="pass" id="pass"  placeholder='   Password' className='relative mt-5 pl-10 p-4   outline-none bg-transparent placeholder:text-slate-800 rounded-3xl shadow-2xl ml-6 placeholder: shadow-black placeholder:shadow-md '/>
+      <div className='flex justify-center items-center relative'>
+        <MdLockPerson className='text-black relative left-5'/>
+      <input type="password" name="pass" id="pass" className='pl-8' placeholder='Password' style={azile}/>
       </div>
-     <Link href='/'> <button className='border rounded-3xl py-3 px-10 bg-black text-white text-center outline-none mt-20 ' type="submit">Login</button></Link>
-     </div>
-     <div className='mt-6'>
-      <p className='text-center '>Forgot password? <Link href='/login'>Sign up</Link> </p>
-      
-     </div>
-   </div>
-   </div>
-    </section>
+       </div>
+       <div className='flex text-[13px] font-extralight space-x-12 mt-5 space-y-1'>
+       <div className='flex items-center space-x-2 '>
+        <input type="checkbox" name="rem" id="rem" className='h-3 w-3'  />
+        <label htmlFor="rem">Remeber me</label>
+       </div>
+       <div>
+        <p className=' italic '>Forgot Password ?</p>
+       </div>
+       </div>
+       <div className=' mt-11 flex justify-center items-center '>
+        <button className='border pb-2 px-28 text-center rounded-xl cursor-pointer outline-none  hover:shadow-md hover:shadow-slate-300'>LOGIN</button>
+       </div>
+       </div>
+    </div>
+  </section>
+ 
   )
 }
 
-export default tris
+export default Tris

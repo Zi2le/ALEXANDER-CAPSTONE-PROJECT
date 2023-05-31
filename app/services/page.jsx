@@ -1,10 +1,11 @@
+"use client"
 import React, { Fragment } from 'react'
 import Image from 'next/image'
 import img from '../services/first.jpg'
 import img1 from '../services/firsthand.jpg'
 import img2 from '../services/second2.jpg'
 import {FaArrowRight} from 'react-icons/fa'
-import Link from 'next/link'
+import Ash from '../ash'
 const services = () => {
  const serviceDescription = [
     {
@@ -47,12 +48,14 @@ const services = () => {
     </Fragment>
     ))
   return (
+    <Ash>
    < section className='h-screen'>
    <h1 className='w-[100%] h-[144px] text-[30px] flex justify-center items-center center'>Handshake infographics mass market crowdfunding iteration</h1>
     <section className='chrischain' >
         {services}
     </section>
     </section>
+    </Ash>
   )
 }
 

@@ -49,7 +49,7 @@ const greens = greenDescription.map( green => (
     <Fragment key={green.id}>
      <section className={`${green.id === 1 ? 'ml-10': '' }`}>
      <div>
-      <Image src={green.image} alt='figma pictures'/>
+      <Image src={green.image} alt='figma pictures' className=' hover:bg-blend-overlay bg-black bg-opacity-30' />
      </div>
      <div className='mt-3'>
      <span className='text-[#0A2640]'>{green.title}</span>
@@ -74,7 +74,7 @@ const greens = greenDescription.map( green => (
       {greens}
     </section>
     <div className='flex items-center justify-center mt-20'>
-    <button className='border py-2 px-7 rounded-2xl text-[#0A2640] border-[#0A2640]'>Load more</button>
+    <button className='border bg-[none] py-2 px-7 rounded-xl text-[#0A2640] border-[#0A2640] relative btn'>Load more</button>
     </div>
     </section>
   )

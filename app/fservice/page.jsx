@@ -5,8 +5,9 @@ import Customer from '../customer/page'
 import Launch from '../launch/page'
 import Fifthcomponent from '../fifthcomponent/page'
 import Sixthcomponent from '../sixthcomponent/page'
-const tris = () => {
+const trisn = () => {
   return (
+   
  <section>
   <section>
     <Services/>
@@ -27,7 +28,8 @@ const tris = () => {
     <Sixthcomponent/>
   </section>
  </section>
+
   )
 }
 
-export default tris
+export default trisn

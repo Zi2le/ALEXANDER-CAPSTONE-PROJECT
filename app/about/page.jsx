@@ -3,9 +3,11 @@ import Firstabout from '../firstabout/page'
 import Secondabout from '../secondabout/page'
 import Thirdabout from '../thirdabout/page'
 import Fourthabout from '../fourthabout/page'
+import Ash from '../ash'
 const about = () => {
   return (
     <section>
+      <Ash>
         <section>
         <Firstabout/>
         </section>
@@ -18,6 +20,7 @@ const about = () => {
         <section>
           <Fourthabout/>
         </section>
+        </Ash>
     </section>
 
   )

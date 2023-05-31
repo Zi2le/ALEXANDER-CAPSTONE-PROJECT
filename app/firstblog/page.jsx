@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+"use client"
+import React, { Fragment, useEffect } from 'react'
 import Image from 'next/image'
 import img26 from '../firstblog/news1.jpg'
 import img27 from '../firstblog/news2.jpg'
@@ -6,7 +7,36 @@ import img28 from '../firstblog/new3.jpg'
 import img29 from '../firstblog/ellipse1.jpg'
 import img30 from '../firstblog/ellipse2.jpg'
 import img31 from '../firstblog/ellipse3.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 const firstnew = () => {
+  useEffect(() =>{
+    AOS.init({duration: 2100})
+  }, [])
+  // const variants={
+  //   hidden:{
+  //     opacity:0
+  //   },
+  //   show:{
+  //     opacity:1,
+  //     transition:{
+  //     staggerChildren: 0.3
+  //     },
+  //   },
+  // }
+  // const images = {
+  //   hidden:{
+  //     opacity: 0,
+  //     x:30,
+  //   },
+  //   show:{
+  //     opacity:1,
+  //     x:0,
+  //     transition:{
+  //       duration:1
+  //     },
+  //   },
+  // }
   const productDescription = [
     {
         id: 0,
@@ -48,10 +78,12 @@ const firstnew = () => {
 const products = productDescription.map( product => (
   <Fragment key={product.id}>
    <section className={`${product.id === 1 ? 'ml-10': '' }`}>
-   <div>
-    <Image src={product.image} alt='figma pictures'/>
+   <div className='relative group'>
+   <Image className='transition duration-300 ease-in ' src={product.image} alt='figma pictures' data-aos ={product.id === 0 ? "fade-left" : product.id === 1 ? "fade-left" : "fade-left" } data-aos-duration ={product.id === 0 ? "1100" : product.id === 1 ? "1450" : "1700" } data-aos-offset='300' data-aos-easing="ease-in-sine"/>
+   <div className={`absolute right-0 left-0 bottom-0 top-0 ${product.id === 2 ? 'w-[298px] h-[0px] rounded-[24px]': product.id === 1 ? 'w-[300px] h-[0px] rounded-[24px]':'w-[300px] h-[0px] rounded-[12px]'}  bg-blend-normal bg-black bg-opacity-40 h-0 transition duration-300 ease-in group-hover:h-[100%] cursor-pointer`}></div>
    </div>
-   <div className='mt-3'>
+   <div data-aos="fade-left">
+   <div className='mt-3' >
    <span className='text-[#0A2640]'>{product.title}</span>
     <span className='text-[#777777] ml-2'>{product.date}</span>
    </div>
@@ -64,7 +96,7 @@ const products = productDescription.map( product => (
     </div>
     <div className='ml-3 mt-2'>{product.img.name}</div>
    </div>
-
+   </div>
    </section>
   </Fragment>
 ))

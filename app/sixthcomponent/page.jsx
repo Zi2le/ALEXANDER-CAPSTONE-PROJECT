@@ -49,7 +49,7 @@ const six = () => {
         ]  
     const blogs = blogDescription.map(blog =>(
        < Fragment key={blog.id}>
-        <section className={`${blog.id === 1 ? 'h-[250px]': ''}`} >
+        <section className={`${blog.id === 1 ? 'ml-4': ''}`}  >
             <div>
         <Image src={blog.image} width={310} height={309} alt='digital marketing'    className='w-[310px] h-[309px] rounded-2xl'/>
         </div>
@@ -73,10 +73,12 @@ const six = () => {
     <span className='text-xl'>management venture</span>
     </div>
 
-    <section className='mt-20 chrischain'>
+    <section className='chrischain ml-28 mt-10'>
         {blogs}
     </section>
-    <button className=' border  rounded-3xl px-4 pt-3 text-center flex items-center justify-center'>Load more</button>
+    <div className='flex item-center justify-center mt-6'>
+    <button className=' border rounded-3xl flex flex-col items-center px-5 py-3 border-black'>Load more</button>
+    </div>
     </section>
   )
 }

@@ -31,7 +31,7 @@ const footer = () => {
       <div className='ml-10'>
       <div className='flex items-center w-[50%]'>
      <Image src={img39} height={20} width={60} alt='xander' className='rounded-full img'/>
-     <p className='ml-3 text-[20px]'>Alexander</p>
+     <p className='ml-3 text-[25px] alex '>Alexander</p>
       </div>
       <div className='mt-10 ml-10'>
         <p className=' text-[16px] text-[#777777]'>Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>

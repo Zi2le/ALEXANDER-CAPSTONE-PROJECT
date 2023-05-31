@@ -1,4 +1,3 @@
-
 import Navbar from '../navbar/page'
 import Seventhcomponent from '../seventhcomponent/page'
 import Footer from '../footer/page'
