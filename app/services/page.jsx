@@ -40,7 +40,7 @@ const services = () => {
  const services = serviceDescription.map(service => (
    <Fragment key={service.id}>
     <section>
-   <Image className='rounded-lg red' src={service.image} alt={service.name} width={300} height={354} placeholder='blur' />
+   <Image className='rounded-lg red im cursor-pointer' src={service.image} alt={service.name} width={300} height={354} placeholder='blur' />
     <h2 className='my-4 text-xl'> {service.heading}</h2>
     <p className='firstpara'>{service.description}</p>
      <div className='flex mt-2 '><span className='border-b-2 border-b-black flex items-center p-2' >{service.link}<FaArrowRight className='mx-5'/></span></div>

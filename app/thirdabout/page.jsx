@@ -27,7 +27,7 @@ const thirdabout = () => {
 const teams = teamDescription.map(team=> (
     <Fragment key={team.id}>
   <section className='mt-20'>
-    <Image src={team.image} alt='team'/>
+    <Image src={team.image} alt='team' className='im'/>
     <p className='mt-2 text-xl ml-2'>{team.name}</p>
     <p className='text-[grey] mt-2 ml-2'>{team.post}</p>
   </section>

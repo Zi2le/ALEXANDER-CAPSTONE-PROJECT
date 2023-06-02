@@ -1,3 +1,4 @@
+"use client"
 import React, { Fragment } from 'react'
 import Image from 'next/image'
 import img32 from '../secondblog/blog.jpg'
@@ -6,6 +7,7 @@ import img34 from '../secondblog/blog2.jpg'
 import img35 from '../firstblog/ellipse1.jpg'
 import img36 from '../firstblog/ellipse2.jpg'
 import img37 from '../firstblog/ellipse3.jpg'
+import Ash from '../ash'
 const tems = () => {
  const greenDescription = [
  {
@@ -49,7 +51,7 @@ const greens = greenDescription.map( green => (
     <Fragment key={green.id}>
      <section className={`${green.id === 1 ? 'ml-10': '' }`}>
      <div>
-      <Image src={green.image} alt='figma pictures' className=' hover:bg-blend-overlay bg-black bg-opacity-30' />
+      <Image src={green.image} alt='figma pictures' className=' hover:bg-blend-overlay bg-black bg-opacity-30 im' />
      </div>
      <div className='mt-3'>
      <span className='text-[#0A2640]'>{green.title}</span>
@@ -69,14 +71,16 @@ const greens = greenDescription.map( green => (
     </Fragment>
 ))
   return (
+    <Ash>
     <section>
     <section className='chrischain ml-28 mt-20'>
       {greens}
     </section>
     <div className='flex items-center justify-center mt-20'>
-    <button className='border bg-[none] py-2 px-7 rounded-xl text-[#0A2640] border-[#0A2640] relative btn'>Load more</button>
+    <button className='border bg-[none] py-2 px-7 rounded-xl text-[#0A2640]  relative btn bg-gradient-to-tl hover:border-none hover:bg-gradient-to-r from-indigo-500 bg-[bg-gradient-to-r from-indigo-500]'>Load more</button>
     </div>
     </section>
+    </Ash>
   )
 }
 

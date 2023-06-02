@@ -13,7 +13,7 @@ const Fris = () => {
     border: "none",
     outline: "none",
     backgroundColor: "transparent",
-    borderBottom: "2px solid grey",
+    borderBottom: "2px solid black",
     width: "150px"
   }
 const typ = (e) =>{
@@ -22,7 +22,7 @@ const typ = (e) =>{
   function out(color,duration){
     setTimeout(() =>{
     document.body.style.backgroundColor = color
-    document.images.style.backgroundColor= 'color'
+    document.images.style.backgroundColor= color
     setTimeout(() =>{
     document.body.style.backgroundColor = ''
     document.images.style.backgroundColor= ''
@@ -98,7 +98,7 @@ const typ = (e) =>{
 </div>
 </div>
 <div className='flex items-center text-xl'>
-  <Image className='rounded-full w-[100px] h-[100px]' src={uni} height={80} width={80} alt='..'/>
+  <Image  src={uni} className='rounded-full w-[100px] h-[100px]'  height={80} width={80} alt='..'></Image>
   <p>{wel}</p>
 </div>
     </section>

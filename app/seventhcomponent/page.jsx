@@ -13,7 +13,7 @@ const eda = () => {
         </div>
         <div className='flex justify-center items-center mt-20'>
             <input type="email" name="em" id="em" placeholder='Your email address' className='bg-[ #FFFFFF] rounded-3xl px-6 py-2 outline-none shadow-md placeholder:text-[black]' />
-          <Link href='/fservice'>  <button className='border px-5 bg-[#65E4A3] ml-3 py-2 rounded-3xl hover:bg-[#1C3D5B] outline-none shadow-md shadow-slate-800'>Start now</button></Link>
+          <Link href='/fservice'>  <button className='border px-5 bg-[#65E4A3] ml-3 py-2 rounded-3xl hover:bg-[#1C3D5B] outline-[none] shadow-md shadow-slate-800'>Start now</button></Link>
         </div>
     </div>
    </section>

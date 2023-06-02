@@ -79,7 +79,7 @@ const products = productDescription.map( product => (
   <Fragment key={product.id}>
    <section className={`${product.id === 1 ? 'ml-10': '' }`}>
    <div className='relative group'>
-   <Image className='transition duration-300 ease-in ' src={product.image} alt='figma pictures' data-aos ={product.id === 0 ? "fade-left" : product.id === 1 ? "fade-left" : "fade-left" } data-aos-duration ={product.id === 0 ? "1100" : product.id === 1 ? "1450" : "1700" } data-aos-offset='300' data-aos-easing="ease-in-sine"/>
+   <Image className='transition duration-300 ease-in ' src={product.image} alt='figma pictures' data-aos ={product.id === 0 ? "fade-left" : product.id === 1 ? "fade-left" : "fade-left" } data-aos-duration ={product.id === 0 ? "1100" : product.id === 1 ? "1500" : "1700" } data-aos-offset='300' data-aos-easing="ease-in-sine"/>
    <div className={`absolute right-0 left-0 bottom-0 top-0 ${product.id === 2 ? 'w-[298px] h-[0px] rounded-[24px]': product.id === 1 ? 'w-[300px] h-[0px] rounded-[24px]':'w-[300px] h-[0px] rounded-[12px]'}  bg-blend-normal bg-black bg-opacity-40 h-0 transition duration-300 ease-in group-hover:h-[100%] cursor-pointer`}></div>
    </div>
    <div data-aos="fade-left">

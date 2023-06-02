@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import img12 from '../fifthcomponent/office1.jpg'
+import img12 from '../fifthcomponent/office3.jpg'
 import {IoIosArrowDropdownCircle} from 'react-icons/io'
 const page = () => {
   return (
    <section className='h-screen'>
     <div className='w-[1100px] h-[503px] m-auto'>
-    <Image src={img12} width={1100} height={403}alt='office view' className='rounded-[24px] w-[100%] h-[503px] ' />
+    <Image src={img12} width={1100} height={403}alt='office view' className='rounded-[24px] w-[100%] h-[503px] im' />
     </div>
     <div className='flex justify-evenly mt-16'>
       <div >

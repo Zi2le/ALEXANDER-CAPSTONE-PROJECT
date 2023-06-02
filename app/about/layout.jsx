@@ -11,9 +11,10 @@ export const metadata = {
      // <html lang="en">
       // <body> 
        <>
+       
             <Navbar/>
           {children}
-         
+       
           <Seventhcomponent/>
           <Footer/>
           

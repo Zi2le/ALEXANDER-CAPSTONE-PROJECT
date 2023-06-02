@@ -37,7 +37,7 @@ const navbar = () => {
   <>
   <nav className='flex justify-between items-center'>
     <div className='flex items-center  justify-between  ml-3 '>
-   <Image className='rounded-full img ' src={img} alt='blacklion' width={60} height={20} priority={true} />
+   <Link href='/'><Image className='rounded-full img ' src={img} alt='blacklion' width={60} height={20} priority={true} /></Link>
    <p className='ml-4 stress text-[20px]'><span className='text-[35px] alex' >A</span>lexander</p>
     </div>
      <div className='flex justify-center items-center '>

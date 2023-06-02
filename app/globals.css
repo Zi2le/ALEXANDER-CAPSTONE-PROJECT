@@ -13,6 +13,10 @@
     transform: scale(1) ;
     transition: 1s;
 }
+.im{
+    transform: scale(1) ;
+    transition: 1s;
+}
 body{
     font-family: 'Crimson Text', serif;
   
@@ -20,6 +24,10 @@ body{
 .img:hover,
 .img:focus{
     transform: scale(1.25) ;
+}
+.im:hover,
+.im:focus{
+    transform: scale(1.05) ;
 }
 
 .chrischain{
