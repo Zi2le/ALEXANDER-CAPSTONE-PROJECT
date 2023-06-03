@@ -70,7 +70,7 @@ const web = () => {
   return (
  <section className='h-screen mt-8  '>
   <div className='w-[85%] h-[85%] bg-[#0A2640] m-auto border rounded-2xl' data-aos="fade-up-right">
-<div className='flex justify-between mt-10 '>
+<div className='flex justify-between  mt-10 '>
 <div>
 <h2 className='text-2xl ml-20 text-[white] mt-5'>
 An enterprise template to ramp <br /> up your company website

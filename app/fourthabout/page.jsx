@@ -42,7 +42,7 @@ const values = valueDescription.map(value => (
         </Fragment>
   )) 
   return (
-  <section className='h-[auto]  bg-[#0A2640] text-[#F1F1F1] flex flex-col items-center justify-evenly '>
+  <section className='h-[auto] w-[80%] bg-[#0A2640] text-[#F1F1F1] flex flex-col items-center justify-evenly m-auto shadow-2xl shadow-[black]'>
     <section className='w-[50%] h-[90%]'>
     <div className='flex flex-col mt-16'>
         <p className='text-[20px]'>Our vaules</p>
