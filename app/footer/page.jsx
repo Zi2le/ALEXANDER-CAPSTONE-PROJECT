@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import img39 from '../navbar/black.jpg'
 const veiao ={
@@ -23,9 +24,29 @@ const ope ={
 const swift = {
   justifyItems: "center"
 }
+
 const footer = () => {
+  const [changeFooter, setChangeFooter] = useState(false)
+  useEffect(() => 
+  {
+    const footeranimate = () =>{
+      const footerPosition = window.scrollY
+      const visibleHeight = window.innerHeight
+      const entireHeight = document.documentElement.scrollHeight
+
+      const footerSroll = entireHeight - visibleHeight * 1.5;
+      
+      footerPosition > footerSroll ? setChangeFooter(true):setChangeFooter(false)
+
+    }   
+    window.addEventListener('scroll', footeranimate)
+    return () =>{
+      window.removeEventListener('scroll', footeranimate)
+    }
+
+  }, [])
   return (
-    <section className='h-screen grayscale relative' style={veiao} >
+    <section className={`h-screen grayscale relative ${changeFooter ? 'footerscroll animating' : 'footerscroll'}`} style={veiao} >
    <div className='absolute' style={ope}>
     <div className='grid grid-cols-4 grid-rows-1 gap-x-4 mt-20' style={swift}>
       <div className='ml-10'>

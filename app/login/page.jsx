@@ -33,7 +33,7 @@ const span ={
 }
 const Elizabeth = () => {
   return (
-   <section className='relative m-0 h-screen  shadow-2xl text-[white]' style={theb}>
+   <section className='relative m-0 h-screen shadow-2xl text-[white]' style={theb}>
     <div className='absolute  rounded-xl ' style={beth}>
    <div className='' ><Link href='/'><HiX className='h-6 w-6 fill-white'/></Link></div>
      <div className='flex flex-col justify-center items-center '>
