@@ -1,10 +1,16 @@
-import React, { Fragment } from 'react'
+'use client'
+import React, { Fragment, useEffect } from 'react'
 import Image from 'next/legacy/image'
 import img23 from '../fourthabout/value1.jpg'
 import img24 from '../fourthabout/value2.jpg'
 import img25 from '../fourthabout/value3.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const fourthabout = () => {
+  useEffect(() =>{
+    AOS.init({duration: 2000})
+  }, [])
   const valueDescription = [ 
     {
         id: 0,
@@ -42,7 +48,10 @@ const values = valueDescription.map(value => (
         </Fragment>
   )) 
   return (
-  <section className='h-[auto] w-[80%] bg-[#0A2640] text-[#F1F1F1] flex flex-col items-center justify-evenly m-auto shadow-2xl shadow-[white]'>
+  <section className='h-[auto] w-[80%] bg-[#0A2640] text-[#F1F1F1] flex flex-col items-center justify-evenly m-auto shadow-2xl shadow-[white]'    
+  data-aos="fade-left"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine">
     <section className='w-[50%] h-[90%]'>
     <div className='flex flex-col mt-16'>
         <p className='text-[20px]'>Our vaules</p>

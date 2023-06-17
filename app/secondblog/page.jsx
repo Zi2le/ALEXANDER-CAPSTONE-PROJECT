@@ -51,7 +51,7 @@ const greens = greenDescription.map( green => (
     <Fragment key={green.id}>
      <section className={`${green.id === 1 ? 'ml-10': '' }`}>
      <div>
-      <Image src={green.image} alt='figma pictures' className=' hover:bg-blend-overlay bg-black bg-opacity-30 im' />
+      <Image src={green.image} alt='figma pictures' className=' hover:bg-blend-overlay bg-black bg-opacity-30 im cursor-pointer' />
      </div>
      <div className='mt-3'>
      <span className='text-[#0A2640]'>{green.title}</span>

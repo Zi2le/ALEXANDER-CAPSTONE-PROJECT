@@ -3,10 +3,10 @@ import Link from 'next/link'
 const eda = () => {
   return (
    
-   <section className='h-screen flex items-center justify-center relative overflow-hidden'>
+   <section className='h-screen flex items-center justify-center relative rounded'>
    
-    <div className='flex flex-col justify-center items-center w-[69%] h-[50%]  bg-[#0A2640]  m-[auto] relative z-10 overflow-hidden'>
-    <div className='h-[430px] w-[430px] bg-[#1C3D5B] rounded-full absolute bottom-[200px] right-[-10px] -z-10 '></div>
+    <div className='flex flex-col justify-center items-center w-[69%] h-[50%]  bg-[#0A2640]  m-[auto] relative z-10 overflow-hidden rounded-md'>
+    <div className='h-[930px] w-[930px] bg-[#1C3D5B] rounded-full absolute bottom-[180px] left-[350px] -z-10 '></div>
         <div className='flex flex-col justify-center items-center '>
             <p className='text-center text-4xl text-[white] '>An enterprise template to ramp </p>
             <span className=' text-3xl mt-2 text-[white] '>up your company website</span>

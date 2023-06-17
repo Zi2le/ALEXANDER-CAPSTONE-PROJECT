@@ -34,7 +34,7 @@ const footer = () => {
       const visibleHeight = window.innerHeight
       const entireHeight = document.documentElement.scrollHeight
 
-      const footerSroll = entireHeight - visibleHeight * 1.5;
+      const footerSroll = entireHeight - visibleHeight * 1.5
       
       footerPosition > footerSroll ? setChangeFooter(true):setChangeFooter(false)
 
@@ -46,7 +46,7 @@ const footer = () => {
 
   }, [])
   return (
-    <section className={`h-screen grayscale relative ${changeFooter ? 'footerscroll animating' : 'footerscroll'}`} style={veiao} >
+    <section className={`h-screen grayscale relative ${changeFooter ? 'footerscroll animating' : 'footerscroll'}`} style={veiao}>
    <div className='absolute' style={ope}>
     <div className='grid grid-cols-4 grid-rows-1 gap-x-4 mt-20' style={swift}>
       <div className='ml-10'>

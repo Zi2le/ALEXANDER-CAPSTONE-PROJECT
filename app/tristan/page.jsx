@@ -53,15 +53,15 @@ const Tris = () => {
        </div>
        <div className='flex text-[13px] font-extralight space-x-12 mt-5 space-y-1'>
        <div className='flex items-center space-x-2 '>
-        <input type="checkbox" name="rem" id="rem" className='h-3 w-3'  />
-        <label htmlFor="rem">Remeber me</label>
+        <input type="checkbox" name="rem" id="rem" className='h-3 w-3 cursor-pointer'  />
+        <label htmlFor="rem" className='cursor-pointer'>Remeber me</label>
        </div>
        <div>
-        <p className=' italic '>Forgot Password ?</p>
+        <p className=' italic  cursor-pointer'>Forgot Password ?</p>
        </div>
        </div>
        <div className=' mt-11 flex justify-center items-center '>
-        <button className='border pb-2 px-28 text-center rounded-xl cursor-pointer outline-none  hover:shadow-md hover:shadow-slate-300'>LOGIN</button>
+       <Link href={'/fservice'}><button className='border pb-2 px-28 text-center rounded-xl cursor-pointer outline-none  hover:shadow-md hover:shadow-slate-300'>LOGIN</button></Link> 
        </div>
        </div>
     </div>
