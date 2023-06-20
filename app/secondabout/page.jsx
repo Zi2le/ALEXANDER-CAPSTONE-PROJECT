@@ -1,9 +1,17 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const secondabout = () => {
+  useEffect(() =>{
+    AOS.init({duration: 2000})
+  }, [])
   return (
     <section className='h-screen mt-28' >
-       <div className='flex flex-col items-center h-[60%] w-[70%] m-auto bg-gradient-to-tl from-slate-600'>
+       <div className='flex flex-col items-center h-[60%] w-[70%] m-auto bg-gradient-to-tl from-slate-600' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
         <div className='flex flex-col justify-center items-center'>
             <p className='text-[white] mt-20'>Our numbers</p>
             <h1 className='text-4xl text-[white] mt-4'>Handshake infographic mass market </h1>
