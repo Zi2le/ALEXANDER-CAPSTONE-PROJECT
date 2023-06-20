@@ -46,7 +46,7 @@ const footer = () => {
 
   }, [])
   return (
-    <section className={`h-screen grayscale relative ${changeFooter ? 'footerscroll animating' : 'footerscroll'}`} style={veiao}>
+    <footer className={`h-screen grayscale relative ${changeFooter ? 'footerscroll animating' : 'footerscroll'}`} style={veiao}>
    <div className='absolute' style={ope}>
     <div className='grid grid-cols-4 grid-rows-1 gap-x-4 mt-20' style={swift}>
       <div className='ml-10'>
@@ -97,7 +97,7 @@ const footer = () => {
    </div>
    
    
-    </section>
+    </footer>
   )
 } 
 

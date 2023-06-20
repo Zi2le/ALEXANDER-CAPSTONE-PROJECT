@@ -60,7 +60,7 @@ const six = () => {
         <Image src={blog.image} width={310} height={309} alt='digital marketing' className='w-[310px] h-[309px] rounded-2xl cursor-pointer'data-aos='fade-right' data-aos-duration ={blog.id === 0 ? "1100" : blog.id === 1 ? "1500" : "1700" } data-aos-offset='400' data-aos-easing="ease-in-sine"/>
    <div className={`absolute right-0 left-0 bottom-0 top-0 ${blog.id === 2 ? 'w-[310px] h-[0px] rounded-[16px]': blog.id === 1 ? 'w-[310px] h-[0px] rounded-[16px]':'w-[310px] h-[0px] rounded-[16px]'}  bg-blend-normal bg-black bg-opacity-40 h-0 transition duration-300 ease-in group-hover:h-[100%] cursor-pointer`}></div>
         </div>
-        <div data-aos="fade-up-right">
+        <div>
         <div className='mt-5'>
             <span className=''>{blog.title}</span>
             <span className='ml-2 text-[grey] text-[15px]'>{blog.date}</span>
@@ -78,8 +78,8 @@ const six = () => {
     <section className='h-screen'>
     <div className='flex flex-col items-center'>
     <p className='text-[grey]'>Our Blog</p>
-    <h2 className='mt-4 text-2xl '>Value proposition accelerator product  </h2>
-    <span className='text-xl'>management venture</span>
+    <h2 className='mt-4 text-[38px] font-normal '>Value proposition accelerator product  </h2>
+    <span className='text-[38px]'>management venture</span>
     </div>
 
     <section className='chrischain ml-28 mt-10'>

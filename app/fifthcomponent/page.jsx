@@ -10,12 +10,12 @@ const page = () => {
     </div>
     <div className='flex justify-evenly mt-16'>
       <div >
-     <p className='w-[40%] text-lg ml-20'>We connect our customers with the best, and help them keep up-and stay open.</p>
+     <p className='w-[40%] text-xl ml-20'>We connect our customers with the best, and help them keep up-and stay open.</p>
       </div>
       <div>
-        <ul className='flex flex-col items-center mr-20'>
-          <li className='flex items-center border-b-2 p-3'>We connect our customers with the best?< IoIosArrowDropdownCircle className='h-6 w-6 mx-6'/></li>
-          <li className='flex items-center border-b-2 p-3'>Android research & development rockstar?<IoIosArrowDropdownCircle className='h-6 w-6 mx-6'/></li>
+        <ul className='flex flex-col justify-center mr-20'>
+          <li className='flex items-center  border-b-2 p-3'>We connect our customers with the best?< IoIosArrowDropdownCircle className='h-6 w-6  ml-[47px]'/></li>
+          <li className='flex items-center  border-b-2 p-3'>Android research & development rockstar?<IoIosArrowDropdownCircle className='h-6 w-6 ml-9'/></li>
         </ul>
       </div>
     </div>

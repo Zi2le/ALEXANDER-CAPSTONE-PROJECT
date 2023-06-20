@@ -69,7 +69,8 @@ const web = () => {
     ))
   return (
  <section className='h-screen mt-8  '>
-  <div className='w-[85%] h-[85%] bg-[#0A2640] m-auto border rounded-2xl' data-aos="fade-up-right">
+  <div className='w-[85%] h-[85%] bg-[#0A2640] m-auto border rounded-2xl' data-aos="fade-right" data-aos-offset="50"
+            data-aos-easing="ease-in-sine">
 <div className='flex justify-between  mt-10 '>
 <div>
 <h2 className='text-2xl ml-20 text-[white] mt-5'>

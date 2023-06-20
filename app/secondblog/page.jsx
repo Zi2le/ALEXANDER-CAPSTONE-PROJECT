@@ -1,5 +1,5 @@
 "use client"
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Image from 'next/image'
 import img32 from '../secondblog/blog.jpg'
 import img33 from '../secondblog/blog1.jpg'
@@ -9,6 +9,7 @@ import img36 from '../firstblog/ellipse2.jpg'
 import img37 from '../firstblog/ellipse3.jpg'
 import Ash from '../ash'
 const tems = () => {
+  
  const greenDescription = [
  {
     id: 0,

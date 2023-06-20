@@ -120,7 +120,7 @@ padding-top: 18px;
     
     transition: transform 0.5s ease-in-out;
     transform: scaleY(0);
-    transform-origin: top;
+    transform-origin: bottom;
   }
   
   .footerscroll.animating {
