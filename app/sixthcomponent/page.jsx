@@ -57,7 +57,7 @@ const six = () => {
        < Fragment key={blog.id}>
         <section className={`${blog.id === 1 ? 'ml-4': ''}`}  >
             <div className='relative group'> 
-        <Image src={blog.image} width={310} height={309} alt='digital marketing' className='w-[310px] h-[309px] rounded-2xl cursor-pointer'data-aos='fade-right' data-aos-duration ={blog.id === 0 ? "1100" : blog.id === 1 ? "1500" : "1700" } data-aos-offset='400' data-aos-easing="ease-in-sine"/>
+        <Image src={blog.image} width={310} height={309} alt='digital marketing' className='w-[310px] h-[309px] rounded-2xl cursor-pointer'/>
    <div className={`absolute right-0 left-0 bottom-0 top-0 ${blog.id === 2 ? 'w-[310px] h-[0px] rounded-[16px]': blog.id === 1 ? 'w-[310px] h-[0px] rounded-[16px]':'w-[310px] h-[0px] rounded-[16px]'}  bg-blend-normal bg-black bg-opacity-40 h-0 transition duration-300 ease-in group-hover:h-[100%] cursor-pointer`}></div>
         </div>
         <div>
@@ -67,7 +67,7 @@ const six = () => {
         </div>
         <p className='w-[60%] mt-6'>{blog.head}</p>
         <div className={` ${blog.img.id === 0 ? " active" : ""} flex  ${blog.img.id === 0 ? "active" : "" } mt-8`}>
-        <Image src={blog.img.image} alt='best cardiothoracic surgeon' width={36}  height={36} className='w-[36px] h-[36px] rounded-full'/>
+        <Image src={blog.img.image} alt='best cardiothoracic surgeon' width={500}  height={500} className='w-[36px] h-[36px] rounded-full'/>
         <p className=' ml-4 mt-[3px]'>{blog.img.name}</p>
         </div>
         </div>

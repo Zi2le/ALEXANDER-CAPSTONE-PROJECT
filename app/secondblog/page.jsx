@@ -78,7 +78,7 @@ const greens = greenDescription.map( green => (
       {greens}
     </section>
     <div className='flex items-center justify-center mt-20'>
-    <button className='border bg-[none] py-2 px-7 rounded-xl text-[#0A2640]  relative btn bg-gradient-to-tl hover:border-none hover:bg-gradient-to-r from-indigo-500 bg-[bg-gradient-to-r from-indigo-500]'>Load more</button>
+    <button className='border bg-[none] py-2 px-7 rounded-xl text-[#0A2640]  relative btn bg-gradient-to-tl hover:border-none hover:bg-gradient-to-r from-indigo-500 bg-[grey] font-semibold'>Load more</button>
     </div>
     </section>
     </Ash>

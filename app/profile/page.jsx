@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from '../login/page'
+import Login from '../sign-up/page'
 const one = () => {
   return (
    <section>

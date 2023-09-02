@@ -46,7 +46,7 @@ const navbar = () => {
      <Link href='/fservice'><li className='hover:text-[grey] exit '>Services</li></Link>
      <Link href='/product' ><li className='hover:text-[grey] exit '>Product</li></Link>
      <Link href='/about'><li className='hover:text-[grey] exit'>About</li></Link>
-     <Link href='/zile'><li className='hover:text-[grey] exit'><button>Login</button></li></Link>
+     <Link href='/profile'><li className='hover:text-[grey] exit'><button>Login</button></li></Link>
       </ul>
       <div className='flex'>
         {!menu && (

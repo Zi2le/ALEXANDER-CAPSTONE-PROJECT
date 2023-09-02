@@ -47,7 +47,7 @@ const Elizabeth = () => {
         <input type="email" name="email" id="email" className='mb-3 text-center'  style={azile} /> 
         <label htmlFor="password" className='mt-3 '>Password</label>  
         <input type="password" name="password" id="password" required style={azile} className='text-center' />
-       <Link href='/'><button type="submit" className='mt-10 py-2 px-5 hover:bg-gradient-to-r from-gray-400 to-gray-600 text-center rounded-3xl border '>Sign up</button></Link> 
+       <Link href='/fservice'><button type="submit" className='mt-10 py-2 px-5 hover:bg-gradient-to-r from-gray-400 to-gray-600 text-center rounded-3xl border '>Sign up</button></Link> 
       </div>
       <div className='  flex flex-col justify-center items-center mt-7 text-lg'>
         <p className=' w-[65%] text-center pb-2 text-[14px]'>
