@@ -1,9 +1,19 @@
 import React from 'react'
-
+import Fservice from '../app/fservice/page'
+import Navbar from '../app/navbar/page'
+import Seventhcomponent from '../app/seventhcomponent/page'
+import Footer from '../app/footer/page'
 const riesen = () => {
   return (
-   <div>riesen</div>
+   <section>
+    <Navbar/>
+      <Fservice/>
+      <Seventhcomponent/>
+      <Footer/>
+    </section>
+    
+ 
   )
 }
 
-export default riesen
+export default  riesen
