@@ -4,7 +4,7 @@ import {RiMailLockLine } from "react-icons/ri"
 import {MdLockPerson} from "react-icons/md"
 import {RiLockPasswordFill, RiTwitterFill} from "react-icons/ri"
 import Image from 'next/image'
-import xan12 from '../tristan/_.jpg'
+import xan12 from './_.jpg'
 // import {Cookie} from 'next/font/google'
 // const dancing_script = Cookie({
 //   subsets: ['latin'],
@@ -61,7 +61,7 @@ const Tris = () => {
        </div>
        </div>
        <div className=' mt-11 flex justify-center items-center '>
-       <Link href={'/fservice'}><button className='border pb-2 px-28 text-center rounded-xl cursor-pointer outline-none  hover:shadow-md hover:shadow-slate-300'>LOGIN</button></Link> 
+       <Link href={'/'}><button className='border pb-2 px-28 text-center rounded-xl cursor-pointer outline-none  hover:shadow-md hover:shadow-slate-300'>LOGIN</button></Link> 
        </div>
        </div>
     </div>

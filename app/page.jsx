@@ -1,17 +1,12 @@
 import React from 'react'
-import Navbar from './navbar/page'
-import Seventhcomponent from './seventhcomponent/page'
-import Footer from './footer/page'
+import Fservice from '../app/fservice/page'
 const riesen = () => {
   return (
    <section>
-    <Navbar/>
-    <section>
-      <Seventhcomponent/>
-      <Footer/>
+      <Fservice/>
     </section>
     
-   </section>
+ 
   )
 }
 

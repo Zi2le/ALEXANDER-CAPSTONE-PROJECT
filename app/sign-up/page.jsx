@@ -55,7 +55,7 @@ const Elizabeth = () => {
         </p>
        </div>
         <div className='flex flex-col justify-center items-center mt-[30px]'> 
-        <p className=''>Already have an account <Link href='/tristan'><span className=' text-[grey]' style={span}>Log in.</span> </Link> </p>
+        <p className=''>Already have an account <Link href='/login'><span className=' text-[grey]' style={span}>Log in.</span> </Link> </p>
       </div>
      </div>
      </div>
